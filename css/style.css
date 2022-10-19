@@ -1,0 +1,106 @@
+/* ********************************** */
+/* HEADER */
+/* ********************************** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c6d3ff;
+
+  /* This allows me to make it sticky later */
+  height: 9.6rem;
+  padding: 0 48px;
+}
+
+.logo {
+  height: 2.4rem; /* This might change because I don't have actual logo yet */
+}
+
+/* ********************************** */
+/* NAVIGATION */
+/* ********************************** */
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #6582e6;
+}
+
+/* ********************************** */
+/* HERO SECTION */
+/* ********************************** */
+
+.section-hero {
+  background-color: #c6d3ff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  margin-top: 8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #c6d3ff;
+}
+
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  color: #6582e6;
+  font-weight: 700;
+}
