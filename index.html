@@ -13,6 +13,7 @@
     />
 
     <link href="css/style.css" rel="stylesheet" />
+    <link href="css/general.css" rel="stylesheet" />
 
     <script
       type="module"
@@ -26,8 +27,64 @@
     <title>EatIT &mdash; Never cook again!</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="eatIT logo" src="img/eatIT-logo.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">1</a></li>
+          <li><a class="main-nav-link" href="#">2</a></li>
+          <li><a class="main-nav-link" href="#">3</a></li>
+          <li><a class="main-nav-link" href="#">4</a></li>
+          <li><a class="main-nav-link" href="#">5</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Healthy meals delivered to your door!
+            </h1>
+
+            <p class="hero-description">
+              The smart 365-days-per-year food subscription that will make you
+              eat healthy again. Tailored to your personal tastes and
+              nutritional needs.
+            </p>
+
+            <a class="btn btn--full margin-right-sm" href="#"
+              >Start eating well</a
+            >
+
+            <a class="btn btn--outline" href="#">Learn more &rarr;</a>
+
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="img/customers/brad.jpg" alt="Photo of Brad" />
+                <img src="img/customers/aby.jpg" alt="Photo of Brad" />
+                <img src="img/customers/dave.jpg" alt="Photo of Brad" />
+                <img src="img/customers/mike.jpg" alt="Photo of Brad" />
+                <img src="img/customers/juliet.jpg" alt="Photo of Brad" />
+                <img src="img/customers/steve.jpg" alt="Photo of Brad" />
+              </div>
+              <p class="delivered-text">
+                <span>300,000</span> meals delivered last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="img/hero.webp"
+              alt="I don't know yet who but prb somebody eating somebody, or some food pictures"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
