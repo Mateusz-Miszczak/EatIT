@@ -14,23 +14,27 @@
     Bold: 700
 
 - Line heights:
+  -3rem
 
 - Letter spacings:
+  - 0.075rem
 
 /////////////////////////////////////////////////////////
 //////////////////////// COLORS \\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////////////////////////////
 
 - Primary:
-    #7090ff
+    #00762e
 
 - Tints:
-    #c6d3ff
-    #
+    #f3faf3
+    #c3e8ca
+    #afe0b8
+    #b3d6c0
 
 - Shades:
-    #6582e6
-    #
+    #006a29
+    #005e25
 
 - Accents:
     #
@@ -38,6 +42,7 @@
 - Greys:
     #333
     #444
+    #888
 
 /////////////////////////////////////////////////////////
 /////////////////////// SHADOWS \\\\\\\\\\\\\\\\\\\\\\\\\
@@ -82,10 +87,72 @@ body {
 /* GENERAL REUSABLE COMPONENTS */
 /* ********************************** */
 
+.container {
+  max-width: 120rem;
+  padding: 1rem 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #006a29;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.075rem;
 }
 
 .btn,
@@ -108,25 +175,77 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #7090ff;
+  background-color: #00762e;
   color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #6582e6;
+  background-color: #005e25;
 }
 
 .btn--outline:link,
 .btn--outline:visited {
-  background-color: #c6d3ff;
   color: #555;
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #d8e1fd;
-  box-shadow: inset 0 0 0 3px #d8e1fd;
+  color: #444;
+  background-color: #99c8ab;
+  box-shadow: inset 0 0 0 3px #99c8ab;
+}
+
+.link:link,
+.link:visited {
+  display: inline;
+  color: #00762e;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transform: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #005e25;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #00762e;
 }
 
 /* HELPER CLASSES */
