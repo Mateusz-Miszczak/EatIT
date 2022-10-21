@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #b3d6c0;
+  background-color: #f8f8f7;
 
   /* This allows me to make it sticky later */
   height: 9.6rem;
@@ -61,7 +61,7 @@
 /* ********************************** */
 
 .section-hero {
-  background-color: #b3d6c0;
+  background-color: #f8f8f7;
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -193,14 +193,14 @@
 .step-img-box:before {
   width: 60%;
   padding-bottom: 60%;
-  background-color: #f3faf3;
+  background-color: #f8f8f7;
   z-index: -2;
 }
 
 .step-img-box::after {
   width: 50%;
   padding-bottom: 45%;
-  background-color: #b3d6c0;
+  background-color: #f3faf3;
   z-index: -1;
 }
 
@@ -297,4 +297,43 @@
   text-align: center;
   font-size: 1.8rem;
   text-decoration: none;
+}
+
+/* ********************************** */
+/* TESTIMONIALS + GALLERY SECTION */
+/* ********************************** */
+
+.section-testimonials {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  background-color: #f8f8f7;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
 }
