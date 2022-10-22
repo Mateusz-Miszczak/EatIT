@@ -209,9 +209,9 @@
   z-index: -1;
 }
 
-/* TODO */
-/* .step-img {
-} */
+.step-img {
+  width: 35%;
+}
 
 /* ********************************** */
 /* MEALS SECTION */
@@ -362,4 +362,89 @@
 
 .gallery-img:hover {
   transform: scale(1.1);
+}
+
+/* ********************************** */
+/* PRICING AND FEATURES SECTION */
+/* ********************************** */
+
+.section-pricing {
+  padding: 9.6rem 0 0 0;
+}
+
+.pricing-plan {
+  border-radius: 1.1rem;
+  width: 75%;
+}
+
+.pricing--plan-starter {
+  justify-self: end;
+  border: 2px solid #f8f8f7;
+  padding: 4.6rem;
+}
+
+.pricing--plan-complete {
+  background-color: #f8f8f7;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing--plan-complete::before {
+  content: "Best value";
+  position: absolute;
+  top: 7%;
+  right: -18%;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #006a29;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
 }
