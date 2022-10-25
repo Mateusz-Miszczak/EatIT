@@ -610,6 +610,13 @@
   margin-bottom: 2.4rem;
 }
 
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
