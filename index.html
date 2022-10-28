@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="eatIT is an AI-powered food subscription tailored to your personal tastes and nutritional needs. Eat healthy 365 days a year."
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -93,11 +102,16 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              class="hero-img"
-              src="img/hero.webp"
-              alt="I don't know yet who but prb somebody eating something, or some food pictures"
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero.png" type="image/png" />
+
+              <img
+                class="hero-img"
+                src="img/hero.png"
+                alt="I don't know yet who but prb somebody eating something, or some food pictures"
+              />
+            </picture>
           </div>
         </div>
       </section>
