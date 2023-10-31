@@ -1,5 +1,7 @@
-# eatIT - https://mateusz-miszczak.github.io/eatIT/
-  My very first website!
+# eatIt
+
+## https://mateuszmiszczak.github.io/eatIT/
+  
 
 ## Assumptions
 
